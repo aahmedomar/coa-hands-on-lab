@@ -67,6 +67,18 @@ steps:
                     stepCounter: 37c69e82-2416-4358-a9ff-4e6ccd3cc09f
                 transform: ""
           - columnReference:
+              columnCounter: 2f3673ba-4473-4044-ae43-ada0db44ea7a
+              stepCounter: fe31e178-12aa-498a-92fb-19b0ce57b6d1
+            dataType: NUMBER(12,2)
+            description: ""
+            name: O_TOTALPRICE1
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f2385dc7-0b59-4531-b94e-e993960c877f
+                    stepCounter: 37c69e82-2416-4358-a9ff-4e6ccd3cc09f
+                transform: "\"ORDERS\".\"O_TOTALPRICE\" * 10"
+          - columnReference:
               columnCounter: fbc6e3c5-9748-45c9-828e-16b73059a1a4
               stepCounter: fe31e178-12aa-498a-92fb-19b0ce57b6d1
             dataType: DATE
