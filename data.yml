@@ -40,7 +40,7 @@ locations:
         database: RAW
         schema: COVID
 macros:
-  Macro-expression_is_true:
+  Macro-dbt_utils:
     id: expression_is_true
     macroString: |2-
             {% test expression_is_true(model, expression, column_name=None) %}
