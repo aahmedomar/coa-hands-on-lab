@@ -61,6 +61,12 @@ macros:
       {%- endif %}
       
       {% endmacro %}
+  Macro-2:
+    id: "2"
+    macroString: |-
+      {%- macro even_odd(column) -%}
+          CASE WHEN MOD({{ column }}, 2) = 0 THEN 'EVEN' ELSE 'ODD' END
+      {%- endmacro %}
 packages: {}
 projects: {}
 stepTypes:
