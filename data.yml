@@ -39,6 +39,7 @@ locations:
       "9":
         database: RAW
         schema: COVID
+<<<<<<< HEAD
 macros:
   Macro-expression_is_true:
     id: expression_is_true
@@ -63,6 +64,9 @@ macros:
             {% endmacro %}
   Macro-undefined:
     id: undefined
+=======
+macros: {}
+>>>>>>> main
 packages: {}
 projects: {}
 stepTypes:
