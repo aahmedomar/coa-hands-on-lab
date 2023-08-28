@@ -40,8 +40,8 @@ locations:
         database: RAW
         schema: COVID
 macros:
-  Macro-1:
-    id: "1"
+  Macro-test_divisibility_by_10:
+    id: "test_divisibility_by_10"
     macroString: |-
       {% macro test_divisibility_by_10(column_name) %}
       {% set column_values_query = "SELECT " ~ column_name ~ " FROM your_table_name" %}  -- Modify 'your_table_name' to the actual table name
@@ -62,8 +62,8 @@ macros:
           Test passed: All values in the column are divisible by 10 without a remainder.
       {% endif %}
       {% endmacro %}
-  Macro-2:
-    id: "2"
+  Macro-even_odd:
+    id: "even_odd"
     macroString: |-
       {%- macro even_odd(column) -%}
           CASE WHEN MOD({{ column }}, 2) = 0 THEN 'EVEN' ELSE 'ODD' END
